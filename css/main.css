@@ -1,0 +1,15 @@
+#index-img {
+    z-index: -1;
+}
+#loginForm {
+    width: 40%;
+    margin-top: 10%;
+}
+#aboutPage {
+    margin-top: 25%;
+    height: 100%;
+}
+#applicationPage {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
