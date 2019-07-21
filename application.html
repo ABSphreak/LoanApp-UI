@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- BOOTSTRAP LINK -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7ff9ef7fe4.js"></script>
+    <script src="js/main.js"></script>
     <title>LOAN APPLICATION</title>
 </head>
-
-
 <body>
+    <!-- NAVIGATION CODE -->
     <nav class="navbar sticky-top d-lg-flex flex-lg-column align-items-center navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+        <a class="navbar-brand" href="index.html">LoanApp <i class="fas fa-home"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
@@ -27,7 +30,7 @@
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Calculator</a>
+                    <a class="nav-link" href="">Calculator</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="application.html">Application</a>
@@ -39,173 +42,74 @@
                     <a class="nav-link" href="login.html">Login</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
-    <div class="container">
-        <div class="d-flex flex-column justify-content-center align-items-center" id="applicationPage">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="customerEmail">Email</label>
-                            <input type="email" class="form-control" id="customerEmail" placeholder="Email">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="customerPassword">Password</label>
-                            <input type="password" class="form-control" id="customerPassword" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="middleName">Middle Name</label>
-                        <small>(Optional)</small>
-                        <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Enter Middle Name">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="dob">Date of Birth</label>
-                            <input type="date" class="form-control" id="dob">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="gender-select">Gender</label>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-control" id="gender-male">
-                                <label class="form-check-label" for="gender-male">Male</label>
-
-                                <input type="radio" class="form-control" id="gender-female">
-                                <label class="form-check-label" for="gender-female">Female</label>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                        </div>
-                    </div>
-
-                    
-
-                    <button type="submit" class="btn btn-info">Submit</button>
-                </form>
-            </fieldset>
-            <br>
-            <br>
-            <br>
-            <fieldset>
-                <legend>Loan Information</legend>
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="customerEmail">Email</label>
-                            <input type="email" class="form-control" id="customerEmail" placeholder="Email">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="customerPassword">Password</label>
-                            <input type="password" class="form-control" id="customerPassword" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="middleName">Middle Name</label>
-                        <small>(Optional)</small>
-                        <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Enter Middle Name">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="dob">Date of Birth</label>
-                            <input type="date" class="form-control" id="dob">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="gender-select">Gender</label>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-control" id="gender-male">
-                                <label class="form-check-label" for="gender-male">Male</label>
-
-                                <input type="radio" class="form-control" id="gender-female">
-                                <label class="form-check-label" for="gender-female">Female</label>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                        </div>
-                    </div>
-
-                    
-
-                    <button type="submit" class="btn btn-info">Submit</button>
-                </form>
-            </fieldset>
-                
-        </div>
-    </div>
-    
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4">First Slide</h3>
+                    <p class="lead">This is a description for the first slide.</p>
+                  </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4">Second Slide</h3>
+                    <p class="lead">This is a description for the second slide.</p>
+                  </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4">Third Slide</h3>
+                    <p class="lead">This is a description for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+          </header>
+          
+          <!-- Page Content -->
+          <section class="py-5">
+            <div class="container">
+              <h1 class="font-weight-light">Half Page Image Slider</h1>
+              <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>!</p>
+            </div>
+          </section>
+
+
+    <!-- ALL CODE HERE -->
+
+
+
+
+    <!-- ALL SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
 </body>
 </html>
